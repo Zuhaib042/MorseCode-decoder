@@ -21,6 +21,7 @@ def decode_word(str)
   end
   empty
 end
+
 # decode whole sentence
 def decode(str)
   split_code = str.split('   ')
@@ -29,5 +30,4 @@ def decode(str)
     arr.push(decode_word(ele))
   end
   arr.join(' ')
-end 
-
+end
